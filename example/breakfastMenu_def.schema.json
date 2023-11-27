@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"foods": {
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/menuitem"
+			}
+		},
+		"drinks": {
+			"type": "array",
+			"items": {
+				"$ref": "#/$defs/menuitem"
+			}
+		}
+	},
+	"$defs": {
+		"menuitem": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"price": {
+					"type": "number"
+				}
+			},
+			"required": [
+				"name",
+				"price"
+			]
+		}
+	}
+}
