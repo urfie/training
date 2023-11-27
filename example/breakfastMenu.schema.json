@@ -1,0 +1,27 @@
+{
+	"$schema": "https://json-schema.org/draft/2019-09/schema",
+	"type": "object",
+	"properties": {
+		"foods" : {
+			"type": "array",
+			"items": {
+				"type" : "object",
+				"properties" : {
+					"name" : {"type" : "string"},
+					"price": {"type" : "number"}					
+				},
+				"required" : ["name","price"]
+			}
+		},
+		"drinks" : {
+			"type": "array",
+			"items": {
+				"type" : "object",
+				"properties" : {
+					"name" : {"type" : "string"},
+					"price": {"type" : "number"}
+				}
+			}
+		}
+	}
+}

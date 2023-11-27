@@ -1,0 +1,43 @@
+{
+	"foods": [
+		{
+			"name": "Belgian Waffles",
+			"price": 5.95,
+			"ingredients": [
+				"waffle",
+				"maple syrup"
+			],
+			"calories": 650
+		},
+		{
+			"name": "Strawberry Belgian Waffles",
+			"price": 7.95,
+			"ingredients": [
+				"waffle",
+				"strawberry",
+				"whipped cream"
+			],
+			"calories": 900
+		},
+		{
+			"name": "Berry-Berry Belgian Waffles",
+			"price": 8.95,
+			"ingredients": [
+				"waffle",
+				"fresh berries",
+				"whipped cream"
+			],
+			"calories": 900
+		}
+	],
+	"drink": [
+		{
+			"name": "Hot Tea",
+			"price": 1
+		},
+		{
+			"name": "Ice Tea",
+			"price": 1
+		}
+	]
+}
