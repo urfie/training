@@ -1,0 +1,72 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "./A1Form",
+	"$defs": {
+		"A1FormListOfExportTaxableGoodsOrServices": {
+			"$anchor": "A1Form",		
+			"type": "object",			
+			"properties": {
+				"TaxableEntrepreneurName": {
+					"type": "string"
+				},
+				"TIN": {
+					"type": "string"
+				},
+				"TaxPeriodMonth": {
+					"type": "number"
+				},
+				"TaxPeriodYear": {
+					"type": "number"
+				},
+				"ReturnSheetModel": {
+					"type": "string"
+				},
+				"ListOfExportTaxableGoodsOrServicesBase": {
+					"type": "array",					
+					"items": {
+						"type": "object",						
+						"properties": {
+							"TaxableGoodsRecepientName": {
+								"type": "string"
+							},
+							"DocumentNumber": {
+								"type": "string"
+							},
+							"DocumentDate": {
+								"type": "string",
+								"format": "date-time"
+							},
+							"TaxBase": {
+								"type": "number"
+							},
+							"Information": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"TaxableGoodsRecepientName",
+							"DocumentNumber",
+							"DocumentDate",
+							"TaxBase",
+							"Information"
+						],
+						"additionalProperties": false
+					}
+				},
+				"Total": {
+					"type": "number"
+				}
+			},
+			"required": [
+				"TaxableEntrepreneurName",
+				"TIN",
+				"TaxPeriodMonth",
+				"TaxPeriodYear",
+				"ReturnSheetModel",
+				"ListOfExportTaxableGoodsOrServicesBase",
+				"Total"
+			],
+			"additionalProperties": false
+		}		
+	}
+}

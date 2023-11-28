@@ -1,0 +1,288 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$comment": "RecordId dihilangkan dulu dari required",
+	"type": "object",
+	"properties": {
+		"RecordId": {
+			"type": "string"
+		},
+		"TaxType": {
+			"type": "string"
+		},
+		"IsDraft": {
+			"type": "boolean"
+		},
+		"TaxableEntrepreneurName": {
+			"type": "string"
+		},
+		"Address": {
+			"type": "string"
+		},
+		"PhoneNumber": {
+			"type": ["string","null"]
+		},
+		"Cellphone": {
+			"type": ["string","null"]
+		},
+		"TaxpayerType": {
+			"type": "string"
+		},
+		"TIN": {
+			"type": "string"
+		},
+		"BusinessFieldClassification": {
+			"type": "string"
+		},
+		"TaxPeriod": {
+			"type": "string"
+		},
+		"ReturnSheetModel": {
+			"type": "string"
+		},
+		"TotalVATAndSTLGCollected": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"VATAndSTLGUnderOrOverPaidOnAmmended": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"VATAndSTLGUnderOfOverPaidDueToAmmendment": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DeclareBy": {
+			"type": ["number","null"]
+		},
+		"City": {
+			"type": ["string","null"]
+		},
+		"Date": {
+			"type": "string",
+			"format": "date-time"
+		},
+		"Signature": {
+			"type": ["string","null"]
+		},
+		"Name": {
+			"type": "string"
+		},
+		"Position": {
+			"type": "string"
+		},
+		"DueDate": {
+			"type": "string",
+			"format": "date-time"
+		},
+		"ExportTangibleTaxableGoods": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticDeliveriesUsingOtherValue": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticDeliveriesToTourist": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticDeliveriesOtherThanOtherValue": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticDeliveriesSelfCollected": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticDeliveriesCollectedByVATCollector": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticDeliveriesUncollectedVAT": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticDeliveriesExemptedVAT": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticDeliveriesVAT": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DeliveryOfTaxableGoodsSubjectToVAT": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DeliveriesOfGoodsNoVAT": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"TotalDeliveryOfGoodsAndServices": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"ImportsOfUncreditedInput": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"ImportsOfOtherTaxableGoods": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"TotalAcquisition": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"VATIsDepositedInAdvance": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"VATCollectedByVATCollector": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"VATUnderOrOverPaid": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"VATUnderOrOverPaidOnPrevious": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"VATUnderOrOverPaidDueToAmendment": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"AskedTo": {
+			"type": ["string","null"]
+		},
+		"BankAccount": {
+			"type": ["string","null"]
+		},
+		"VATPayable": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"VATNeedToRepay": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"STLGMustBeSelfCollected": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"STLGCollectedByVATCollector": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"STLGUnderOrOverPaid": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"STLGUnderOrOverPaidOnPrevious": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"STLGUnderOrOverPaidDueToAmendment": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"AskedForReturns": {
+			"type": "boolean"
+		},
+		"ImportOfTaxableGoods": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticTaxableGoodsUsingOtherValueTaxBase": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticTaxableGoodsWithInvoiceCode01": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"DomesticTaxableGoodsWithInvoiceCode02": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"CarryForwardOfInputTax": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"ResultsOfTheRecalculation": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"AmountOfInputTaxCalculated": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"OutputTaxMustBeSelfCollected": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"InputTaxCanBeCalculated": {
+			"$ref": "#/$defs/tax_object"
+		},
+		"A1FormListOfExportTaxableGoodsOrServices": {
+			"$ref": "A1Form.schema.json#"
+		},
+		"A2FormListOfOutputTaxesOnDomesticDeliveries": {
+			"$ref": "A2From.schema.json#"
+		},
+		"B3FormListOfInputTaxesUncredit": {
+			"$ref": "B3Form.schema.json#B3Form"
+		}
+	},
+	"required": [
+		"TaxType",
+		"IsDraft",
+		"TaxableEntrepreneurName",
+		"Address",
+		"PhoneNumber",
+		"Cellphone",
+		"TaxpayerType",
+		"TIN",
+		"BusinessFieldClassification",
+		"TaxPeriod",
+		"ReturnSheetModel",
+		"TotalVATAndSTLGCollected",
+		"VATAndSTLGUnderOrOverPaidOnAmmended",
+		"VATAndSTLGUnderOfOverPaidDueToAmmendment",
+		"DeclareBy",
+		"City",
+		"Date",
+		"Signature",
+		"Name",
+		"Position",
+		"DueDate",
+		"ExportTangibleTaxableGoods",
+		"DomesticDeliveriesUsingOtherValue",
+		"DomesticDeliveriesToTourist",
+		"DomesticDeliveriesOtherThanOtherValue",
+		"DomesticDeliveriesSelfCollected",
+		"DomesticDeliveriesCollectedByVATCollector",
+		"DomesticDeliveriesUncollectedVAT",
+		"DomesticDeliveriesExemptedVAT",
+		"DomesticDeliveriesVAT",
+		"DeliveryOfTaxableGoodsSubjectToVAT",
+		"DeliveriesOfGoodsNoVAT",
+		"TotalDeliveryOfGoodsAndServices",
+		"ImportsOfUncreditedInput",
+		"ImportsOfOtherTaxableGoods",
+		"TotalAcquisition",
+		"VATIsDepositedInAdvance",
+		"VATCollectedByVATCollector",
+		"VATUnderOrOverPaid",
+		"VATUnderOrOverPaidOnPrevious",
+		"VATUnderOrOverPaidDueToAmendment",
+		"AskedTo",
+		"BankAccount",
+		"VATPayable",
+		"VATNeedToRepay",
+		"STLGMustBeSelfCollected",
+		"STLGCollectedByVATCollector",
+		"STLGUnderOrOverPaid",
+		"STLGUnderOrOverPaidOnPrevious",
+		"STLGUnderOrOverPaidDueToAmendment",
+		"AskedForReturns",
+		"ImportOfTaxableGoods",
+		"DomesticTaxableGoodsUsingOtherValueTaxBase",
+		"DomesticTaxableGoodsWithInvoiceCode01",
+		"DomesticTaxableGoodsWithInvoiceCode02",
+		"CarryForwardOfInputTax",
+		"ResultsOfTheRecalculation",
+		"AmountOfInputTaxCalculated",
+		"OutputTaxMustBeSelfCollected",
+		"InputTaxCanBeCalculated"
+	],
+	"$defs": {
+		"tax_object": {
+			"type": "object",
+			"properties": {
+				"SellingPrice": {
+					"type": ["number","null"]
+				},
+				"OtherTaxBase": {
+					"type": ["number","null"]
+				},
+				"VAT": {
+					"type": ["number","null"]
+				},
+				"SalesTaxLuxuryGoods": {
+					"type": ["number","null"]
+				}
+			},
+			"required": [
+				"SellingPrice",
+				"OtherTaxBase",
+				"VAT",
+				"SalesTaxLuxuryGoods"
+			]
+		}
+	}
+}

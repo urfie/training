@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./A2Form",
+  "$defs": {
+    "A2FormListOfOutputTaxesOnDomesticDeliveries": {
+      "$anchor": "A2Form",
+      "type": "object",
+      "properties": {
+        "TaxableEntrepreneurName": {
+          "type": "string"
+        },
+        "TIN": {
+          "type": "string"
+        },
+        "TaxPeriodMonth": {
+          "type": "number"
+        },
+        "TaxPeriodYear": {
+          "type": "number"
+        },
+        "ReturnSheetModel": {
+          "type": "string"
+        },
+        "ListOfOutputTaxesOnDomesticDeliveries": {
+          "type": "array",
+          "title": "ListOfOutputTaxesOnDomesticDeliveries",
+          "items": {
+            "type": "object",
+            "properties": {
+              "InvoiceDataType": {
+                "type": "number"
+              },
+              "TaxableGoodsRecepientName": {
+                "type": "string"
+              },
+              "IdentificationNumber": {
+                "type": "string"
+              },
+              "TaxInvoiceNumber": {
+                "type": "string"
+              },
+              "TaxInvoiceTransactionCode": {
+                "type": "string"
+              },
+              "TaxInvoiceTransactionType": {
+                "type": "string"
+              },
+              "TaxInvoiceTransactionSerialNumber": {
+                "type": "string"
+              },
+              "TaxInvoiceDocumentDate": {
+                "type": "string"
+              },
+              "TaxBase": {
+                "type": "number"
+              },
+              "OtherTaxBase": {
+                "type": "number"
+              },
+              "VAT": {
+                "type": "number"
+              },
+              "STLG": {
+                "type": "number"
+              },
+              "TaxInvoiceCodeAndSerialNumberReplacedOrReturned": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "InvoiceDataType",
+              "TaxableGoodsRecepientName",
+              "IdentificationNumber",
+              "TaxInvoiceNumber",
+              "TaxInvoiceTransactionCode",
+              "TaxInvoiceTransactionType",
+              "TaxInvoiceTransactionSerialNumber",
+              "TaxInvoiceDocumentDate",
+              "TaxBase",
+              "OtherTaxBase",
+              "VAT",
+              "STLG",
+              "TaxInvoiceCodeAndSerialNumberReplacedOrReturned"
+            ],
+            "additionalProperties": false          
+          }
+        },
+        "TotalTaxBase": {
+          "type": "number"
+        },
+        "TotalOtherTaxBase": {
+          "type": "number"
+        },
+        "TotalVAT": {
+          "type": "number"
+        },
+        "TotalSTLG": {
+          "type": "number"
+        }
+      },
+	  "required": [
+        "TaxableEntrepreneurName",
+        "TIN",
+        "TaxPeriodMonth",
+        "TaxPeriodYear",
+        "ReturnSheetModel",
+        "ListOfOutputTaxesOnDomesticDeliveries",
+        "TotalTaxBase",
+        "TotalOtherTaxBase",
+        "TotalVAT",
+        "TotalSTLG"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
