@@ -1,0 +1,100 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$defs": {
+		"B3FormListOfInputTaxesUncredit": {
+			"$anchor": "B3Form",
+			"type": "object",
+			"required": [
+				"TaxableEntrepreneurName",
+				"TIN",
+				"ListOfInputTaxesUncredit",
+				"TotalRow",
+				"TaxPeriodYear",
+				"ReturnSheetModel"
+			],
+			"additionalProperties": false,
+			"properties": {
+				"TaxableEntrepreneurName": {
+					"type": "string"
+				},
+				"TIN": {
+					"type": ["string","null"]
+				},
+				"ListOfInputTaxesUncredit": {
+					"type": ["array","null"],
+					"title": "ListOfInputTaxesUncredit",
+					"items": {
+						"type": "object",
+						"required": [
+							"InvoiceDataType",
+							"Name",
+							"TIN",
+							"TaxInvoiceNumber",
+							"TransactionCode",
+							"TransactionType",
+							"TransactionNumber",
+							"TransactionDate",
+							"TaxBase",
+							"OtherTaxBase",
+							"VAT",
+							"STLG",
+							"InvoiceCode"
+						],
+						"additionalProperties": false,
+						"properties": {
+							"InvoiceDataType": {
+								"type": ["number","string"]								
+							},
+							"Name": {
+								"type": "string"
+							},
+							"TIN": {
+								"type": ["string","null"]
+							},
+							"TaxInvoiceNumber": {
+								"type": "string"
+							},
+							"TransactionCode": {
+								"type": "string"
+							},
+							"TransactionType": {
+								"type": ["string","null"]
+							},
+							"TransactionNumber": {
+								"type": "string"
+							},
+							"TransactionDate": {
+								"type": "string",
+								"format": "date-time"
+							},
+							"TaxBase": {
+								"type": "number"
+							},
+							"OtherTaxBase": {
+								"type": "number"
+							},
+							"VAT": {
+								"type": "number"
+							},
+							"STLG": {
+								"type": "number"
+							},
+							"InvoiceCode": {
+								"type": ["string","null"]
+							}
+						}
+					}
+				},
+				"TotalRow": {
+					"type": ["number","null"]
+				},
+				"TaxPeriodYear": {
+					"type": ["string","null"]
+				},
+				"ReturnSheetModel": {
+					"type": ["string","null"]
+				}
+			}
+		}
+	}
+}
